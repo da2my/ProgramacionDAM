@@ -2,12 +2,12 @@ package model;
 
 import java.util.Arrays;
 
-public class Programador extends Empleado{
+public class _01Programador extends _01_07Empleado{
 	//Atributos
 	private String [] lenguajes;
 	
 	//Constructor
-	public Programador(String nombre, String telefono, String [] lenguajes) {
+	public _01Programador(String nombre, String telefono, String [] lenguajes) {
 		super(nombre, telefono);
 		this.lenguajes= lenguajes;
 	}

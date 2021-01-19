@@ -1,6 +1,6 @@
 package model;
 
-public class Empleado {
+public class _01_07Empleado {
 	
 //	Atributos
 	private String nombre;
@@ -8,17 +8,17 @@ public class Empleado {
 	private static int numEmpleados;
 	
 //	Constructores
-	public Empleado() {
+	public _01_07Empleado() {
 		numEmpleados++;
 	}
 	
-	public Empleado(String nombre, String telefono) {
+	public _01_07Empleado(String nombre, String telefono) {
 		this.nombre=nombre;
 		this.telefono=telefono;
 		numEmpleados++;
 	}
 	
-	public Empleado(Empleado e) {//Constructor de copia
+	public _01_07Empleado(_01_07Empleado e) {//Constructor de copia
 		this.nombre=e.nombre;
 		this.telefono=e.telefono;
 		numEmpleados++;
@@ -54,7 +54,7 @@ public class Empleado {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Empleado other = (Empleado) obj;
+		_01_07Empleado other = (_01_07Empleado) obj;
 		if (nombre == null) {
 			if (other.nombre != null)
 				return false;
