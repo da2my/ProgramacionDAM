@@ -2,16 +2,21 @@ package model;
 
 import java.util.Arrays;
 
-public class _01Programador extends _01_07Empleado{
-	//Atributos
-	private String [] lenguajes;
+public class _01Programador extends _01_07Empleado {
+	// Atributos
+	private String[] lenguajes;
+
+	// Constructor
+	public _01Programador() {
+		
+	}
 	
-	//Constructor
-	public _01Programador(String nombre, String telefono, String [] lenguajes) {
+	public _01Programador(String nombre, String telefono, String... lenguajes) {
 		super(nombre, telefono);
-		this.lenguajes= lenguajes;
+		this.lenguajes = lenguajes;
 	}
 
+//	Getter de lenguajes atributo que no hace copia
 	public String[] getLenguajes() {
 		return lenguajes;
 	}
